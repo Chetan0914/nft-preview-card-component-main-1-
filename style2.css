@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&display=swap');
+/* font-family: 'Fraunces', serif;
+
+font-family: 'Montserrat', sans-serif;
+
+font-family: 'Outfit', sans-serif; */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:  hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.container{
+    max-width: 400px;
+    margin: 0px auto;
+   
+}
+
+.card{
+    margin: 2rem 1rem;
+    padding: 20px;
+    border-radius: 15px;
+ 
+    
+    box-shadow: 0px 15px 15px  hsl(205, 94%, 7%),
+                 0px -15px 15px   hsl(205, 94%, 7%), 
+                 15px 0px 15px   hsl(205, 94%, 7%),
+                 -15px 0px 15px   hsl(205, 94%, 7%);
+    background-color:  hsl(216, 50%, 16%);
+    
+}
+.img img{
+    width: 100%;
+    display: block;
+    height: auto;
+    
+}
+.img{
+    border-radius:10px ;
+    overflow: hidden;
+    position: relative ;
+    
+}
+
+
+
+
+.img-overlay img{
+    position: absolute;
+    width: 45px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%,0.5);
+    display: none;
+    /* opacity: 0.6; */
+   
+}
+
+.img:hover .img-overlay{
+    display: block;
+    cursor: pointer;
+}
+
+.heading a{
+    font-family: 'Fraunces', serif;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 20px 0px;
+    display: inline-block;
+    font-size: 21px;
+}
+
+
+.heading a:hover{
+    color:  hsl(178, 100%, 50%);
+}
+
+p{
+    color: hsl(215, 51%, 70%);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+.eth{
+    color: hsl(178, 100%, 50%) ;
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.eth p{
+    padding: 10px;
+    font-weight: 600;
+}
+.days p{
+    padding: 10px;
+}
+
+
+.days{
+    color:hsl(215, 51%, 70%);
+    display: flex;
+    align-items: center;
+}
+
+hr{
+    border-color:hsl(215, 32%, 27%) ;
+}
+.last-line{
+    display: flex;
+   
+    align-items: center;
+}
+.last-line{
+    padding-top: 12px;
+}
+
+.author a{
+    color: white;
+    text-decoration: none;
+}
+.author{
+    padding-left:1.1em;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.author a:hover{
+    color: hsl(178, 100%, 50%);;
+}
+
+.last-line img{
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
